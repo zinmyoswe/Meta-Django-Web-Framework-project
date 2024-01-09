@@ -6,7 +6,23 @@
 
 ```bash
 # run
-python3 manage.py runserver
+
+pip install --user virtualenv
+
+python -m virtualenv venv
+
+cd venv\Scripts\activate
+
+pip install -r requirements.txt
+
+python manage.py makemigrations
+
+pip install pillow
+
+python manage.py createsuperuser
+
+python manage.py runserver
+
 ```
 
 ```bash
